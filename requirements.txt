@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 fastapi
 uvicorn
 sqlalchemy
 psycopg2-binary
 pydantic
-=======
 anyio==4.9.0
 click==8.1.8
 colorama==0.4.6
@@ -21,4 +19,3 @@ starlette==0.46.1
 typing-inspection==0.4.0
 typing_extensions==4.13.2
 uvicorn==0.34.0
->>>>>>> 57439130dd222a85fbf52df7b280190adb05ac6f
