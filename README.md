@@ -21,3 +21,19 @@ RESTful API endpoints for managing the book records:
   "title": "Book Title",
   "author": "Author Name"
 }
+
+###  Request Payload (for GET)
+```json
+
+[
+  {
+    "id": 2,
+    "title": "The Mountain is You",
+    "author": "Brianna Wiest"
+  },
+  {
+    "id": 3,
+    "title": "Atomic Habits",
+    "author": "James Clear"
+  }
+]
