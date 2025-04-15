@@ -14,7 +14,7 @@ RESTful API endpoints for managing the book records:
 
 ---
 
-###  Request Payload (for POST)
+###  Request Payload
 
 ```json
 {
