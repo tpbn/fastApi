@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
@@ -13,3 +14,21 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Base class to create tables
 Base = declarative_base()
+=======
+import os
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base
+
+# Using environment variable for database URL
+database_url = os.environ.get("DATABASE_URL")
+
+# Creating the engine to interact with PostgreSQL
+engine = create_engine(database_url, echo=True)
+
+# Creating a session local class to interact with the database
+SessionLocal = sessionmaker(autocommit=False, autoflush=False,
+bind=engine)
+
+# Base class to create tables
+Base = declarative_base()
+>>>>>>> 57439130dd222a85fbf52df7b280190adb05ac6f

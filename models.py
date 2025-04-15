@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from sqlalchemy import Column, Integer, String
 from database import Base
 
@@ -7,3 +8,13 @@ class Book(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, index=True)
     author = Column(String)
+=======
+from sqlalchemy import Column, Integer, String
+from database import Base
+
+class Book(Base):
+__tablename__ = "books"
+id = Column(Integer, primary_key=True, index=True)
+title = Column(String, index=True)
+author = Column(String)
+>>>>>>> 57439130dd222a85fbf52df7b280190adb05ac6f
