@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
@@ -46,7 +45,7 @@ def add_book(book: BookCreate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(db_book)
     return db_book
-=======
+
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
@@ -89,4 +88,4 @@ db.add(db_book)
 db.commit()
 db.refresh(db_book)
 return db_book
->>>>>>> 57439130dd222a85fbf52df7b280190adb05ac6f
+

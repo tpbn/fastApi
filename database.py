@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
@@ -14,7 +13,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Base class to create tables
 Base = declarative_base()
-=======
+
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
@@ -31,4 +30,3 @@ bind=engine)
 
 # Base class to create tables
 Base = declarative_base()
->>>>>>> 57439130dd222a85fbf52df7b280190adb05ac6f
