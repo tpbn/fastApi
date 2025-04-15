@@ -28,8 +28,9 @@ class BookCreate(BaseModel):
 class BookOut(BookCreate):
     id: int
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True
+    }
 
 # Get all books
 @app.get("/books", response_model=List[BookOut])
